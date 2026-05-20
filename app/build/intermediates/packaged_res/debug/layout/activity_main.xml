@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http:
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0C"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="48dp">
+
+    <!-- Хедер лаунчера -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="32dp">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="32dp"
+            android:background="#FF6B00"
+            android:layout_marginRight="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MANGO"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OS"
+            android:textColor="#FF8A00"
+            android:textSize="28sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="4dp"/>
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="HH:mm"
+            android:format24Hour="HH:mm"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:fontFamily="sans-serif-thin" />
+
+        <LinearLayout
+            android:id="@+id/pinned_apps_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#121216">
+
+            <!-- Сюда в Java мы программно добавим 4 иконки -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText android:id="@+id/search_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Поиск приложения..." android:textColor="#FFFFFF" android:textColorHint="#555566" android:background="#121216" android:padding="12dp" android:layout_marginBottom="16dp"/>
+
+    <!-- Стилизованный список приложений -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/apps_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+R_DEF: Internal format may change without notice
+local
+drawable item_background
+id app_icon
+id app_name
+id apps_list
+id pinned_apps_container
+id search_bar
+layout activity_main
+layout app_item

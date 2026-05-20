@@ -1,0 +1,85 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.mango.os.launcher"
+4    android:versionCode="1"
+5    android:versionName="1.0-Mango" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Разрешение видеть все установленные приложения в Android 11+ -->
+12    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+12-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:5:5-77
+12-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:5:22-74
+13
+14    <permission
+14-->[androidx.core:core:1.9.0] /home/kirill/.gradle/caches/transforms-3/75919e89ab9acfe92b320b18b5eba894/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+15        android:name="com.mango.os.launcher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.9.0] /home/kirill/.gradle/caches/transforms-3/75919e89ab9acfe92b320b18b5eba894/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.9.0] /home/kirill/.gradle/caches/transforms-3/75919e89ab9acfe92b320b18b5eba894/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.mango.os.launcher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.9.0] /home/kirill/.gradle/caches/transforms-3/75919e89ab9acfe92b320b18b5eba894/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.9.0] /home/kirill/.gradle/caches/transforms-3/75919e89ab9acfe92b320b18b5eba894/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:7:5-22:19
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.9.0] /home/kirill/.gradle/caches/transforms-3/75919e89ab9acfe92b320b18b5eba894/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+22        android:debuggable="true"
+23        android:extractNativeLibs="false"
+24        android:icon="@android:drawable/sym_def_app_icon"
+24-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:9:9-58
+25        android:label="Mango OS"
+25-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:8:9-33
+26        android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+26-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:10:9-82
+27        <activity
+27-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:12:9-21:20
+28            android:name="com.mango.os.MainActivity"
+28-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:13:13-41
+29            android:exported="true" >
+29-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:14:13-36
+30
+31            <!-- Эти категории делают приложение системным лаунчером -->
+32            <intent-filter>
+32-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:16:13-20:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:17:17-69
+33-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:17:25-66
+34
+35                <category android:name="android.intent.category.HOME" />
+35-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:18:17-73
+35-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:18:27-70
+36                <category android:name="android.intent.category.DEFAULT" />
+36-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:19:17-76
+36-->/mnt/c/Users/kirill/Documents/MangoOS/app/src/main/AndroidManifest.xml:19:27-73
+37            </intent-filter>
+38        </activity>
+39
+40        <provider
+40-->[androidx.emoji2:emoji2:1.2.0] /home/kirill/.gradle/caches/transforms-3/4381fccdde393d19d04161b40313d198/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+41            android:name="androidx.startup.InitializationProvider"
+41-->[androidx.emoji2:emoji2:1.2.0] /home/kirill/.gradle/caches/transforms-3/4381fccdde393d19d04161b40313d198/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+42            android:authorities="com.mango.os.launcher.androidx-startup"
+42-->[androidx.emoji2:emoji2:1.2.0] /home/kirill/.gradle/caches/transforms-3/4381fccdde393d19d04161b40313d198/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+43            android:exported="false" >
+43-->[androidx.emoji2:emoji2:1.2.0] /home/kirill/.gradle/caches/transforms-3/4381fccdde393d19d04161b40313d198/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+44            <meta-data
+44-->[androidx.emoji2:emoji2:1.2.0] /home/kirill/.gradle/caches/transforms-3/4381fccdde393d19d04161b40313d198/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+45                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+45-->[androidx.emoji2:emoji2:1.2.0] /home/kirill/.gradle/caches/transforms-3/4381fccdde393d19d04161b40313d198/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+46                android:value="androidx.startup" />
+46-->[androidx.emoji2:emoji2:1.2.0] /home/kirill/.gradle/caches/transforms-3/4381fccdde393d19d04161b40313d198/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+47            <meta-data
+47-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/kirill/.gradle/caches/transforms-3/985a628a1f5b5ddc7202e86f547851a5/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+48                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+48-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/kirill/.gradle/caches/transforms-3/985a628a1f5b5ddc7202e86f547851a5/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+49                android:value="androidx.startup" />
+49-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/kirill/.gradle/caches/transforms-3/985a628a1f5b5ddc7202e86f547851a5/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+50        </provider>
+51    </application>
+52
+53</manifest>

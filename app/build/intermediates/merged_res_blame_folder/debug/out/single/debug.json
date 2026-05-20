@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.mango.os.app-merged_res-22:/layout_activity_main.xml.flat",
+        "source": "com.mango.os.app-main-24:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.mango.os.app-merged_res-22:/layout_app_item.xml.flat",
+        "source": "com.mango.os.app-main-24:/layout/app_item.xml"
+    },
+    {
+        "merged": "com.mango.os.app-merged_res-22:/drawable_item_background.xml.flat",
+        "source": "com.mango.os.app-main-24:/drawable/item_background.xml"
+    }
+]
